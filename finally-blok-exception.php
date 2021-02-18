@@ -1,4 +1,5 @@
 <?php
+namespace app;
 
 class Test
 {
@@ -6,7 +7,7 @@ class Test
     public function __construct( $file = 'tmp.txt')
     {
         try {
-            $this->file = $file;
+            $this->file = 'files/' . $file;
 
             $start = 'start';
             file_put_contents($this->file, $start . PHP_EOL);
@@ -25,18 +26,18 @@ class Test
         } catch (Exception $e) {
             file_put_contents($this->file, $e->getMessage() . PHP_EOL, FILE_APPEND);
 //            $end = 'end';
-//            file_put_contents($this->file, $end . PHP_EOL);
+//            file_put_contents($this->files, $end . PHP_EOL);
         }
 
 //        catch (ExceptionTwo $e) {
-//            file_put_contents($this->file, $e->getMessage());
+//            file_put_contents($this->files, $e->getMessage());
 //            $end = 'end';
-//            file_put_contents($this->file, $end . PHP_EOL);
+//            file_put_contents($this->files, $end . PHP_EOL);
 //        }
 //        catch (ExceptionThree $e) {
-//            file_put_contents($this->file, $e->getMessage());
+//            file_put_contents($this->files, $e->getMessage());
 //            $end = 'end';
-//            file_put_contents($this->file, $end . PHP_EOL);
+//            file_put_contents($this->files, $end . PHP_EOL);
 //        }.......
 
         //finally in this case is best practice, Because duplication of code is bad idea
