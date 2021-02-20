@@ -24,7 +24,7 @@ class DemonstrationInterception {
         return rand(0,100);
     }
 
-    public function __get(string $property) {
+    public function __get($property) {
         $method = 'get' . $property;
         if(method_exists($this, $method)) {
             return $this->$method();
@@ -72,4 +72,3 @@ class DemonstrationInterception {
 
 $test  = new DemonstrationInterception();
 
-echo $test->getRandomWord();
