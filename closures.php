@@ -29,3 +29,6 @@ echo $callback() . PHP_EOL;
 echo $callback() . PHP_EOL;
 echo $callback() . PHP_EOL;
 echo $callback() . PHP_EOL;
+
+
+return 'Hello';
