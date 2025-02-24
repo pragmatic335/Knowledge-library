@@ -1,2 +1,4 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/pragmatic335/Knowledge-library)
+
 # Библиотека знаний
-Пока тут древнее зло, творённое много много зим назад
+Много старой, новой информации. Находится в перманентном обновлении с 25.02.2025
