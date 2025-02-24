@@ -1,2 +1,2 @@
-# PHP-educational-progmam
-Advanced and common knowledge about PHP
+# Библиотека знаний
+Пока тут древнее зло, творённое много много зим назад

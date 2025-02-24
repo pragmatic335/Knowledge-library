@@ -24,7 +24,7 @@ class Test
 
 
         } catch (Exception $e) {
-            file_put_contents($this->file, $e->getMessage() . PHP_EOL, FILE_APPEND);
+            file_put_contents($this->file, $e->getMessage().PHP_EOL, FILE_APPEND);
 //            $end = 'end';
 //            file_put_contents($this->files, $end . PHP_EOL);
         }
